@@ -1,0 +1,75 @@
+.wrapper {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  display: flex;
+  top: 100%;
+  bottom: auto;
+  left: 100%;
+  right: auto;
+  z-index: 1;
+
+  pointer-events: none;
+  user-select: none;
+
+  opacity: 0;
+  transition: opacity 0.15s ease;
+
+  /* Default styles */
+  font-family: system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: initial;
+  color: black;
+  width: max-content;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0.3rem;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip {
+  opacity: 1;
+  transition-delay: 200ms;
+}
+
+.top {
+  top: auto;
+  bottom: 100%;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+}
+
+.bottom {
+  top: 100%;
+  bottom: auto;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  margin-top: 5px;
+}
+
+.left {
+  top: 50%;
+  bottom: auto;
+  left: auto;
+  right: 100%;
+  transform: translateY(-50%);
+  margin-right: 5px;
+}
+
+.right {
+  top: 50%;
+  bottom: auto;
+  left: 100%;
+  right: auto;
+  transform: translateY(-50%);
+  margin-left: 5px;
+}
