@@ -1,5 +1,8 @@
 .wrapper {
   position: relative;
+  display: inline;
+  width: min-content;
+  height: min-content;
 }
 
 .tooltip {
@@ -17,20 +20,27 @@
   opacity: 0;
   transition: opacity 0.15s ease;
 
-  /* Default styles */
+  /* Defaults */
+  --_bg: #333333;
+
+  @media (prefers-color-scheme: light) {
+    --_bg: white;
+  }
+
   font-family: system-ui, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   line-height: initial;
-  color: black;
+  color: white;
   width: max-content;
-  background-color: white;
+  background: var(--_bg);
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 5px;
+  border-color: var(--_bg);
   margin: 0;
-  padding: 0.3rem;
-  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
-    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  padding: 0.35rem;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 15%))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 15%));
 }
 
 .wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip {
