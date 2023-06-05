@@ -44,7 +44,7 @@
   left: 50%;
   right: auto;
   transform: translateX(-50%);
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .bottom {
@@ -53,7 +53,7 @@
   left: 50%;
   right: auto;
   transform: translateX(-50%);
-  margin-top: 5px;
+  margin-top: 0.5rem;
 }
 
 .left {
@@ -62,7 +62,7 @@
   left: auto;
   right: 100%;
   transform: translateY(-50%);
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 
 .right {
@@ -71,5 +71,5 @@
   left: 100%;
   right: auto;
   transform: translateY(-50%);
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
