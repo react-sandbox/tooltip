@@ -13,14 +13,14 @@ export interface TooltipProps {
 export const Tooltip = ({
   title,
   position = 'top',
-  className,
+  className = '',
   children
 }: TooltipProps) => (
   <div className="wrapper">
     {children}
     <div
       className={`tooltip ${position} ${className}`}
-      data-role="tooltip"
+      role="tooltip"
       // NOTE: Waiting on types resolution (ref: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60822)
       // @ts-ignore
       inert="true"
