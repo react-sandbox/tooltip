@@ -1,10 +1,10 @@
-/** @type {import('jest').Config} */
+import type { Config } from 'jest'
 
-const config = {
+const config: Config = {
   testEnvironment: 'jsdom',
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
   }
 }
 
-module.exports = config
+export default config
