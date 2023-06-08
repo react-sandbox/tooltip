@@ -22,16 +22,18 @@
 
   /* Defaults */
   --_bg: #333333;
+  --_color: white;
 
   @media (prefers-color-scheme: light) {
     --_bg: white;
+    --_color: black;
   }
 
   font-family: system-ui, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   line-height: initial;
-  color: white;
+  color: var(--_color);
   width: max-content;
   background: var(--_bg);
   border: 1px solid;

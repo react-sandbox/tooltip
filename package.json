@@ -1,8 +1,9 @@
 {
   "name": "@react-sandbox/tooltip",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "React tooltip component",
   "author": "William Grosset",
+  "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsup src/index.ts --dts",
