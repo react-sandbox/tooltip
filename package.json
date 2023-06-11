@@ -8,6 +8,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --dts",
+    "prepublish": "yarn clean && yarn build",
     "clean": "rm -rf ./dist",
     "dev": "tsup src/index.ts --watch",
     "test": "jest",
