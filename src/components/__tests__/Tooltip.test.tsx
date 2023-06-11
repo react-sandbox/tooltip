@@ -1,7 +1,7 @@
 import React from 'react'
 import { cleanup, render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import { Tooltip } from '../Tooltip'
+import Tooltip from '../Tooltip'
 
 afterEach(cleanup)
 
