@@ -6,7 +6,7 @@ import Tooltip from '../Tooltip'
 afterEach(cleanup)
 
 describe('Tooltip', () => {
-  test('should render text inside tooltip', () => {
+  test('should render title as text inside tooltip', () => {
     const text = 'Hello, World!'
     render(
       <Tooltip title={text}>
