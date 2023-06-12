@@ -57,6 +57,16 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveClass('right')
   })
 
+  test("should render with 'hide' class when disabled", () => {
+    render(
+      <Tooltip title="Test" position="right" disabled>
+        <button>Test</button>
+      </Tooltip>
+    )
+    const tooltip = screen.getByRole('tooltip')
+    expect(tooltip).toHaveClass('hide')
+  })
+
   test('should concatenate classes from className prop', () => {
     render(
       <Tooltip title="Test" position="right" className="text-md text-green-500">

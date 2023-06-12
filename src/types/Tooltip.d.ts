@@ -4,5 +4,6 @@ export interface TooltipProps {
   title: string
   position?: Position
   className?: string
+  disabled?: boolean
   children: React.ReactNode
 }

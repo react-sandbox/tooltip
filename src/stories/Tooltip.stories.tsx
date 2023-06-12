@@ -48,6 +48,7 @@ export const Primary: Story = {
   args: {
     className: 'test',
     position: 'top',
-    title: 'Hello, World!'
+    title: 'Hello, World!',
+    disabled: false
   }
 }

@@ -6,13 +6,16 @@ export default function Tooltip({
   title,
   position = 'top',
   className = '',
+  disabled = false,
   children
 }: TooltipProps) {
   return (
     <div className={styles.wrapper}>
       {children}
       <div
-        className={`${styles.tooltip} ${styles[position]} ${className}`}
+        className={`${styles.tooltip} ${styles[position]} ${className} ${
+          disabled ? styles.hide : ''
+        }`}
         role="tooltip"
         // NOTE: Waiting on types resolution (ref: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60822)
         // @ts-ignore
