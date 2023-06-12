@@ -1,6 +1,6 @@
 import React from 'react'
 import { TooltipProps } from '../types/Tooltip'
-import './styles/Tooltip.css'
+import styles from './styles/Tooltip.module.css'
 
 export default function Tooltip({
   title,
@@ -9,10 +9,10 @@ export default function Tooltip({
   children
 }: TooltipProps) {
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       {children}
       <div
-        className={`tooltip ${position} ${className}`}
+        className={`${styles.tooltip} ${styles[position]} ${className}`}
         role="tooltip"
         // NOTE: Waiting on types resolution (ref: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60822)
         // @ts-ignore
