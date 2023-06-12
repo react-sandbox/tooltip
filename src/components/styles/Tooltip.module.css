@@ -51,6 +51,38 @@
   transition-delay: 200ms;
 }
 
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip.delay-0 {
+  transition-delay: 0ms;
+}
+
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip.delay-100 {
+  transition-delay: 100ms;
+}
+
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip.delay-200 {
+  transition-delay: 200ms;
+}
+
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip.delay-300 {
+  transition-delay: 300ms;
+}
+
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip.delay-400 {
+  transition-delay: 400ms;
+}
+
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip.delay-500 {
+  transition-delay: 500ms;
+}
+
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip.delay-750 {
+  transition-delay: 750ms;
+}
+
+.wrapper > *:is(:hover, :focus-visible, :active) ~ .tooltip.delay-1000 {
+  transition-delay: 1000ms;
+}
+
 .top {
   top: auto;
   bottom: 100%;

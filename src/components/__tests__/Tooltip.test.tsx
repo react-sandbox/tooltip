@@ -57,9 +57,29 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveClass('right')
   })
 
+  test("should render with 'delay-200' class as delay default", () => {
+    render(
+      <Tooltip title="Test">
+        <button>Test</button>
+      </Tooltip>
+    )
+    const tooltip = screen.getByRole('tooltip')
+    expect(tooltip).toHaveClass('delay-200')
+  })
+
+  test("should render with 'delay-500' class when passed a delay of 500", () => {
+    render(
+      <Tooltip title="Test" delay={500}>
+        <button>Test</button>
+      </Tooltip>
+    )
+    const tooltip = screen.getByRole('tooltip')
+    expect(tooltip).toHaveClass('delay-500')
+  })
+
   test("should render with 'hide' class when disabled", () => {
     render(
-      <Tooltip title="Test" position="right" disabled>
+      <Tooltip title="Test" disabled>
         <button>Test</button>
       </Tooltip>
     )
@@ -69,11 +89,15 @@ describe('Tooltip', () => {
 
   test('should concatenate classes from className prop', () => {
     render(
-      <Tooltip title="Test" position="right" className="text-md text-green-500">
+      <Tooltip
+        title="Test"
+        position="bottom"
+        className="text-md text-green-500"
+      >
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('right text-md text-green-500')
+    expect(tooltip).toHaveClass('bottom text-md text-green-500')
   })
 })
