@@ -46,7 +46,7 @@ export const Primary: Story = {
     </div>
   ),
   args: {
-    className: '',
+    className: 'test',
     position: 'top',
     title: 'Hello, World!'
   }

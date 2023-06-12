@@ -56,4 +56,14 @@ describe('Tooltip', () => {
     const tooltip = screen.getByRole('tooltip')
     expect(tooltip).toHaveClass('right')
   })
+
+  test('should concatenate classes from className prop', () => {
+    render(
+      <Tooltip title="Test" position="right" className="text-md text-green-500">
+        <button>Test</button>
+      </Tooltip>
+    )
+    const tooltip = screen.getByRole('tooltip')
+    expect(tooltip).toHaveClass('right text-md text-green-500')
+  })
 })

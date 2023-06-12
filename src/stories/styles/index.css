@@ -21,6 +21,9 @@ abbr {
   gap: 3rem;
 }
 
-.red {
-  color: red;
+.test {
+  color: white;
+  background: red;
+  border-color: red;
+  margin-bottom: 10px;
 }
