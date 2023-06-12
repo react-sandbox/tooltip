@@ -6,11 +6,16 @@
 .tooltip {
   position: absolute;
   display: flex;
-  top: 100%;
-  bottom: auto;
-  left: 100%;
-  right: auto;
   z-index: 1;
+
+  /* Default position */
+  top: auto;
+  bottom: 100%;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  margin-bottom: 0.5rem;
+  /* /Default position */
 
   pointer-events: none;
   user-select: none;
@@ -18,7 +23,6 @@
   opacity: 0;
   transition: opacity 0.15s ease;
 
-  /* Defaults */
   --_bg: #333333;
   --_color: white;
 
@@ -37,7 +41,6 @@
   border: 1px solid;
   border-radius: 5px;
   border-color: var(--_bg);
-  margin: 0;
   padding: 0.35rem;
   filter: drop-shadow(0 4px 3px rgb(0 0 0 / 15%))
     drop-shadow(0 2px 2px rgb(0 0 0 / 15%));
@@ -64,6 +67,7 @@
   right: auto;
   transform: translateX(-50%);
   margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 .left {
@@ -73,6 +77,7 @@
   right: 100%;
   transform: translateY(-50%);
   margin-right: 0.5rem;
+  margin-bottom: 0;
 }
 
 .right {
@@ -82,4 +87,5 @@
   right: auto;
   transform: translateY(-50%);
   margin-left: 0.5rem;
+  margin-bottom: 0;
 }
