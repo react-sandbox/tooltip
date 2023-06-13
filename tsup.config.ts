@@ -6,6 +6,12 @@ import { defineConfig } from 'tsup'
 
 export default defineConfig({
   entry: ['src/index.ts'],
+  minify: true,
+  target: 'es2018',
+  external: ['react'],
+  sourcemap: true,
+  format: ['esm', 'cjs'],
+  injectStyle: true,
   esbuildPlugins: [
     {
       name: 'css-module',
@@ -63,6 +69,5 @@ export default defineConfig({
         )
       }
     }
-  ],
-  injectStyle: true
+  ]
 })
