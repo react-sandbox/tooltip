@@ -17,87 +17,83 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveTextContent(text)
   })
 
-  test("should render with 'top' class as position default", () => {
+  test('should render with top position as default', () => {
     render(
       <Tooltip title="Test">
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('top')
+    expect(tooltip).toHaveAttribute('data-position', 'top')
   })
 
-  test("should render with 'bottom' class when passed 'bottom' position", () => {
+  test('should render with bottom position when given position', () => {
     render(
       <Tooltip title="Test" position="bottom">
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('bottom')
+    expect(tooltip).toHaveAttribute('data-position', 'bottom')
   })
 
-  test("should render with 'left' class when passed 'left' position", () => {
+  test('should render with left position when given position', () => {
     render(
       <Tooltip title="Test" position="left">
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('left')
+    expect(tooltip).toHaveAttribute('data-position', 'left')
   })
 
-  test("should render with 'right' class when passed 'right' position", () => {
+  test('should render with right position when given position', () => {
     render(
       <Tooltip title="Test" position="right">
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('right')
+    expect(tooltip).toHaveAttribute('data-position', 'right')
   })
 
-  test("should render with 'delay-200' class as delay default", () => {
+  test('should render with transition delay of 200 as default', () => {
     render(
       <Tooltip title="Test">
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('delay-200')
+    expect(tooltip).toHaveAttribute('data-delay', '200')
   })
 
-  test("should render with 'delay-500' class when passed a delay of 500", () => {
+  test('should render with transition delay of 500 when given delay', () => {
     render(
       <Tooltip title="Test" delay={500}>
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('delay-500')
+    expect(tooltip).toHaveAttribute('data-delay', '500')
   })
 
-  test("should render with 'hide' class when disabled", () => {
+  test('should render disabled when given disabled', () => {
     render(
       <Tooltip title="Test" disabled>
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('hide')
+    expect(tooltip).toHaveAttribute('data-disabled', 'true')
   })
 
-  test('should concatenate classes from className prop', () => {
+  test('should render classes when given className', () => {
     render(
-      <Tooltip
-        title="Test"
-        position="bottom"
-        className="text-md text-green-500"
-      >
+      <Tooltip title="Test" className="text-md text-green-500">
         <button>Test</button>
       </Tooltip>
     )
     const tooltip = screen.getByRole('tooltip')
-    expect(tooltip).toHaveClass('bottom text-md text-green-500')
+    expect(tooltip).toHaveClass('text-md text-green-500')
   })
 })

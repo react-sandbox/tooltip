@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import { TooltipDivProps, TooltipProps } from '../types/Tooltip'
-import styles from './styles/Tooltip.module.css'
+import './styles/Tooltip.css'
 
 function TooltipDiv({
   title,
@@ -11,9 +11,11 @@ function TooltipDiv({
 }: TooltipDivProps) {
   return (
     <div
-      className={`${styles.tooltip} ${styles[position ?? '']} ${
-        styles[`delay-${delay}`]
-      } ${className} ${disabled ? styles.hide : ''}`}
+      data-sandbox-tooltip
+      data-position={position}
+      data-delay={delay}
+      data-disabled={disabled}
+      className={className}
       role="tooltip"
       // NOTE: Waiting on types resolution (ref: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60822)
       // @ts-ignore
@@ -35,7 +37,7 @@ export default function Tooltip({
   children
 }: TooltipProps) {
   return (
-    <div className={styles.wrapper}>
+    <div data-sandbox-tooltip-wrapper>
       {children}
       <MemoizedTooltipDiv
         title={title}
