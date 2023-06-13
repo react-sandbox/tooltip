@@ -12,9 +12,5 @@ export interface TooltipProps {
 
 export type TooltipDivProps = Pick<
   TooltipProps,
-  'title',
-  'position',
-  'delay',
-  'disabled',
-  'className'
+  'title' | 'position' | 'delay' | 'disabled' | 'className'
 >
