@@ -14,8 +14,7 @@
   left: 50%;
   right: auto;
   transform: translateX(-50%);
-  margin-bottom: 0.5rem;
-  /* /Default position */
+  margin-bottom: 0.625rem;
 
   pointer-events: none;
   user-select: none;
@@ -23,18 +22,14 @@
   opacity: 0;
   transition: opacity 0.15s ease;
 
-  --_bg: #333333;
-  --_color: white;
+  --_bg: white;
+  --_color: black;
 
-  @media (prefers-color-scheme: light) {
-    --_bg: white;
-    --_color: black;
-  }
-
-  font-family: system-ui, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial;
   font-size: 0.875rem;
   font-weight: normal;
-  line-height: initial;
+  line-height: 1.4;
   color: var(--_color);
   width: max-content;
   background: var(--_bg);
@@ -107,7 +102,7 @@
   left: 50%;
   right: auto;
   transform: translateX(-50%);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.625rem;
 }
 
 [data-sandbox-tooltip][data-position='bottom'] {
@@ -116,7 +111,7 @@
   left: 50%;
   right: auto;
   transform: translateX(-50%);
-  margin-top: 0.5rem;
+  margin-top: 0.625rem;
   margin-bottom: 0;
 }
 
@@ -126,7 +121,7 @@
   left: auto;
   right: 100%;
   transform: translateY(-50%);
-  margin-right: 0.5rem;
+  margin-right: 0.625rem;
   margin-bottom: 0;
 }
 
@@ -136,7 +131,7 @@
   left: 100%;
   right: auto;
   transform: translateY(-50%);
-  margin-left: 0.5rem;
+  margin-left: 0.625rem;
   margin-bottom: 0;
 }
 
