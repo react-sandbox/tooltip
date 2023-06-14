@@ -4,22 +4,14 @@ import Tooltip from '..'
 import './styles/index.css'
 
 const meta: Meta<typeof Tooltip> = {
-  /* 👇 The title prop is optional.
-   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
-   * to learn how to generate automatic titles
-   */
   title: 'Tooltip',
   component: Tooltip
 }
 
 export default meta
+
 type Story = StoryObj<typeof Tooltip>
 
-/*
- *👇 Render functions are a framework specific feature to allow you control on how the component renders.
- * See https://storybook.js.org/docs/react/api/csf
- * to learn how to use render functions.
- */
 export const Primary: Story = {
   render: ({ ...args }) => (
     <div className="page">
@@ -40,13 +32,13 @@ export const Primary: Story = {
           <code>
             {'<'}abbr{'/>'}
           </code>{' '}
-          element.
+          element
         </div>
       </div>
     </div>
   ),
   args: {
-    className: 'test',
+    className: '',
     position: 'top',
     delay: 200,
     title: 'Hello, World!',

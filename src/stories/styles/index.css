@@ -17,8 +17,9 @@ abbr {
 
 .content {
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .test {
