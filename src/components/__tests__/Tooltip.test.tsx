@@ -17,7 +17,7 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveTextContent(text)
   })
 
-  test('should render with top position as default', () => {
+  test('should render top position attribute as default', () => {
     render(
       <Tooltip title="Test">
         <button>Test</button>
@@ -27,7 +27,7 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveAttribute('data-position', 'top')
   })
 
-  test('should render with bottom position when given position', () => {
+  test('should render bottom position attribute when given position', () => {
     render(
       <Tooltip title="Test" position="bottom">
         <button>Test</button>
@@ -37,7 +37,7 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveAttribute('data-position', 'bottom')
   })
 
-  test('should render with left position when given position', () => {
+  test('should render left position attribute when given position', () => {
     render(
       <Tooltip title="Test" position="left">
         <button>Test</button>
@@ -47,7 +47,7 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveAttribute('data-position', 'left')
   })
 
-  test('should render with right position when given position', () => {
+  test('should render right position attribute when given position', () => {
     render(
       <Tooltip title="Test" position="right">
         <button>Test</button>
@@ -57,7 +57,7 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveAttribute('data-position', 'right')
   })
 
-  test('should render with transition delay of 200 as default', () => {
+  test('should render transition delay attribute of 200 as default', () => {
     render(
       <Tooltip title="Test">
         <button>Test</button>
@@ -67,7 +67,7 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveAttribute('data-delay', '200')
   })
 
-  test('should render with transition delay of 500 when given delay', () => {
+  test('should render transition delay attribute of 500 when given delay', () => {
     render(
       <Tooltip title="Test" delay={500}>
         <button>Test</button>
@@ -77,7 +77,7 @@ describe('Tooltip', () => {
     expect(tooltip).toHaveAttribute('data-delay', '500')
   })
 
-  test('should render disabled when given disabled', () => {
+  test('should render disabled attribute when given boolean', () => {
     render(
       <Tooltip title="Test" disabled>
         <button>Test</button>
