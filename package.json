@@ -1,6 +1,6 @@
 {
   "name": "@react-sandbox/tooltip",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Lightweight tooltip component",
   "author": "William Grosset (https://williamgrosset.com)",
   "license": "MIT",
