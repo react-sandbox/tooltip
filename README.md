@@ -1,5 +1,12 @@
 # tooltip
 
+![Tooltip example](example.png)
+
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/react-sandbox/tooltip/node.js.yml)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@react-sandbox/tooltip)
+![npm](https://img.shields.io/npm/dw/@react-sandbox/tooltip)
+![GitHub issues](https://img.shields.io/github/issues/react-sandbox/tooltip)
+
 Lightweight (<2KB gzipped) tooltip component.
 
 ## Install
@@ -22,8 +29,8 @@ import Tooltip from '@react-sandbox/tooltip'
 
 function App() {
   return (
-    <Tooltip title="Settings" position="top" delay={200}>
-      <button>⚙️</button>
+    <Tooltip title="Download" position="top" delay={200}>
+      <button>Save ✅</button>
     </Tooltip>
   )
 }
