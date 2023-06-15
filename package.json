@@ -1,7 +1,7 @@
 {
   "name": "@react-sandbox/tooltip",
   "version": "0.1.5",
-  "description": "React tooltip component",
+  "description": "Lightweight tooltip component",
   "author": "William Grosset (https://williamgrosset.com)",
   "license": "MIT",
   "main": "dist/index.js",
@@ -9,6 +9,10 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "tooltip"
   ],
   "scripts": {
     "build": "tsup",
