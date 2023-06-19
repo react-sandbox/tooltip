@@ -23,12 +23,11 @@ npm install @react-sandbox/tooltip
 Import the `Tooltip` component:
 
 ```tsx
-import React from 'react'
 import Tooltip from '@react-sandbox/tooltip'
 
 function App() {
   return (
-    <Tooltip title="Download" position="top" delay={200}>
+    <Tooltip title="Download">
       <button>Save ✅</button>
     </Tooltip>
   )
