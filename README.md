@@ -1,6 +1,6 @@
 # tooltip
 
-![Tooltip example](example.png)
+![Tooltip example](example.gif)
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/react-sandbox/tooltip/node.js.yml)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@react-sandbox/tooltip)
