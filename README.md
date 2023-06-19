@@ -46,31 +46,31 @@ function App() {
 
 type: `string` (required)
 
-Tooltip text content.
+description: Tooltip text content.
 
 #### position
 
 type: `'top' | 'bottom' | 'left' | 'right'` (default: `top`)
 
-Tooltip position.
+description: Tooltip position.
 
 #### delay
 
 type: `0 | 100 | 200 | 300 | 400 | 500 | 750 | 1000` (default: `200`)
 
-Initial tooltip transition delay.
+description: Initial tooltip transition delay.
 
 #### disabled
 
 type: `boolean` (default: `false`)
 
-Whether the tooltip is disabled or not.
+description: Whether the tooltip is disabled or not.
 
 **className**
 
 type: `string`
 
-Tooltip CSS classes.
+description: Tooltip CSS classes.
 
 ## Development
 
