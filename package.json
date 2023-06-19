@@ -1,19 +1,28 @@
 {
   "name": "@react-sandbox/tooltip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight tooltip component",
   "author": "William Grosset (https://williamgrosset.com)",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-sandbox/tooltip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/react-sandbox/tooltip/issues"
+  },
   "files": [
     "dist"
   ],
   "keywords": [
     "react",
-    "tooltip"
+    "typescript",
+    "tooltip",
+    "component"
   ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "prepublish": "yarn clean && yarn build",
