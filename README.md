@@ -1,12 +1,18 @@
-# tooltip
+<h1 align="center">
+  <a href="https://www.npmjs.com/package/@react-sandbox/tooltip">@react-sandbox/tooltip</a>
+</h1>
 
-![Tooltip example](example.gif)
+<p align="center">
+  <img src="https://img.shields.io/github/actions/workflow/status/react-sandbox/tooltip/node.js.yml" alt="GitHub workflow status" />
+  <img src="https://img.shields.io/bundlephobia/minzip/@react-sandbox/tooltip" alt="NPM bundle size" />
+  <img src="https://img.shields.io/npm/dw/@react-sandbox/tooltip" alt="NPM weekly downloads" />
+</p>
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/react-sandbox/tooltip/node.js.yml)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/@react-sandbox/tooltip)
-![npm](https://img.shields.io/npm/dw/@react-sandbox/tooltip)
+<p align="center">
+  <img src="example.gif" alt="Tooltip example" />
+</p>
 
-Lightweight tooltip component.
+<p align="center">Lightweight tooltip component.</p>
 
 ## Install
 
