@@ -16,11 +16,17 @@
 
 ## Install
 
-Install the `@react-sandbox/tooltip` package:
+Install the `@react-sandbox/tooltip` package.
+
+With Yarn:
 
 ```bash
 yarn add @react-sandbox/tooltip
-# or
+```
+
+With NPM:
+
+```
 npm install @react-sandbox/tooltip
 ```
 
