@@ -29,6 +29,7 @@ npm install @react-sandbox/tooltip
 Import the `Tooltip` component:
 
 ```tsx
+import React from 'react'
 import Tooltip from '@react-sandbox/tooltip'
 
 function App() {
@@ -42,35 +43,13 @@ function App() {
 
 ### Props
 
-#### title
-
-type: `string` (required)
-
-description: Tooltip text content.
-
-#### position
-
-type: `'top' | 'bottom' | 'left' | 'right'` (default: `top`)
-
-description: Tooltip position.
-
-#### delay
-
-type: `0 | 100 | 200 | 300 | 400 | 500 | 750 | 1000` (default: `200`)
-
-description: Initial tooltip transition delay.
-
-#### disabled
-
-type: `boolean` (default: `false`)
-
-description: Whether the tooltip is disabled or not.
-
-**className**
-
-type: `string`
-
-description: Tooltip CSS classes.
+| Prop        | Type                                                  | Default      | Description              |
+| ----------- | ----------------------------------------------------- | ------------ | ------------------------ |
+| `title`     | `string`                                              | **required** | Text content             |
+| `position`  | `'top' \| 'bottom' \| 'left' \| 'right'`              | `'top'`      | Position of tooltip      |
+| `delay`     | `0 \| 100 \| 200 \| 300 \| 400 \| 500 \| 750 \| 1000` | `200`        | Initial transition delay |
+| `disabled`  | `boolean`                                             | `false`      | Visible or not           |
+| `className` | `string`                                              | `-`          | CSS classes              |
 
 ## Development
 
