@@ -18,7 +18,8 @@
     "react",
     "typescript",
     "tooltip",
-    "component"
+    "component",
+    "react-tooltip"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
