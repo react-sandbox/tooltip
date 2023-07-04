@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/actions/workflow/status/react-sandbox/tooltip/node.js.yml" alt="GitHub workflow status" />
   <img src="https://img.shields.io/bundlephobia/minzip/@react-sandbox/tooltip" alt="NPM bundle size" />
-  <img src="https://img.shields.io/npm/dw/@react-sandbox/tooltip" alt="NPM weekly downloads" />
+  <img src="https://img.shields.io/npm/dt/@react-sandbox/tooltip?color=%234ba0f6" alt="Tdownloads" />
 </p>
 
 <p align="center">
@@ -18,13 +18,13 @@
 
 Install the `@react-sandbox/tooltip` package.
 
-With Yarn:
+With `yarn`:
 
 ```bash
 yarn add @react-sandbox/tooltip
 ```
 
-With NPM:
+With `npm`:
 
 ```
 npm install @react-sandbox/tooltip
