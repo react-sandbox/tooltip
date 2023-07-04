@@ -3,18 +3,20 @@
 </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/actions/workflow/status/react-sandbox/tooltip/node.js.yml" alt="GitHub workflow status" />
-  <img src="https://img.shields.io/bundlephobia/minzip/@react-sandbox/tooltip" alt="NPM bundle size" />
-  <img src="https://img.shields.io/npm/dt/@react-sandbox/tooltip?color=%234ba0f6" alt="Tdownloads" />
+  <img src="https://img.shields.io/github/actions/workflow/status/react-sandbox/tooltip/node.js.yml" alt="Build status" />
+  <img src="https://img.shields.io/bundlephobia/minzip/@react-sandbox/tooltip?color=%234ba0f6" alt="Build size" />
+  <img src="https://img.shields.io/npm/dt/@react-sandbox/tooltip?color=%234ba0f6" alt="Package downloads" />
 </p>
 
 <p align="center">
-  <img src="example.gif" alt="Tooltip example" />
+  <img src="example.gif" alt="Example" />
 </p>
 
 <p align="center">Lightweight tooltip component.</p>
 
-## Install
+## Usage
+
+### Install
 
 Install the `@react-sandbox/tooltip` package.
 
@@ -30,7 +32,7 @@ With `npm`:
 npm install @react-sandbox/tooltip
 ```
 
-## Usage
+### Import
 
 Import the `Tooltip` component:
 
@@ -40,8 +42,8 @@ import Tooltip from '@react-sandbox/tooltip'
 
 function App() {
   return (
-    <Tooltip title="Download">
-      <button>Save ✅</button>
+    <Tooltip title="Download ✅">
+      <button>Save</button>
     </Tooltip>
   )
 }
