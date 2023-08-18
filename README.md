@@ -12,21 +12,13 @@
   <img src="example.gif" alt="Example" />
 </p>
 
-<p align="center">Lightweight tooltip component.</p>
+<p align="center">💬 Lightweight, customizable tooltip component.</p>
 
 ## Usage
 
 ### Install
 
-Install the `@react-sandbox/tooltip` package.
-
-With `yarn`:
-
-```bash
-yarn add @react-sandbox/tooltip
-```
-
-With `npm`:
+Install the `@react-sandbox/tooltip` package:
 
 ```
 npm install @react-sandbox/tooltip
