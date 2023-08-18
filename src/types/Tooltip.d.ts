@@ -7,10 +7,11 @@ export interface TooltipProps {
   delay?: Delay
   disabled?: boolean
   className?: string
+  style?: React.CSSProperties
   children: React.ReactNode
 }
 
 export type TooltipDivProps = Pick<
   TooltipProps,
-  'title' | 'position' | 'delay' | 'disabled' | 'className'
+  'title' | 'position' | 'delay' | 'disabled' | 'className' | 'style'
 >

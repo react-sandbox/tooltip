@@ -39,6 +39,7 @@ export const Primary: Story = {
   ),
   args: {
     className: '',
+    style: {},
     position: 'top',
     delay: 200,
     title: 'Hello, World!',

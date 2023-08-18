@@ -50,6 +50,7 @@ function App() {
 | `delay`     | `0 \| 100 \| 200 \| 300 \| 400 \| 500 \| 750 \| 1000` | `200`        | Initial transition delay |
 | `disabled`  | `boolean`                                             | `false`      | Visible or not           |
 | `className` | `string`                                              | `-`          | CSS classes              |
+| `style`     | `React.CSSProperties`                                 | `-`          | CSS styles               |
 
 ## Development
 

@@ -96,4 +96,14 @@ describe('Tooltip', () => {
     const tooltip = screen.getByRole('tooltip')
     expect(tooltip).toHaveClass('text-md text-green-500')
   })
+
+  test('should render inline styles when given style', () => {
+    render(
+      <Tooltip title="Test" style={{ background: 'blue' }}>
+        <button>Test</button>
+      </Tooltip>
+    )
+    const tooltip = screen.getByRole('tooltip')
+    expect(tooltip).toHaveStyle({ background: 'blue' })
+  })
 })

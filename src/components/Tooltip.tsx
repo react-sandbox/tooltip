@@ -7,7 +7,8 @@ function TooltipDiv({
   position,
   delay,
   disabled,
-  className
+  className,
+  style
 }: TooltipDivProps) {
   return (
     <div
@@ -16,6 +17,7 @@ function TooltipDiv({
       data-delay={delay}
       data-disabled={disabled}
       className={className}
+      style={style}
       role="tooltip"
       // NOTE: Waiting on types resolution (ref: https://github.com/DefinitelyTyped/DefinitelyTyped/pull/60822)
       // @ts-ignore
@@ -34,6 +36,7 @@ export default function Tooltip({
   delay = 200,
   disabled = false,
   className = '',
+  style,
   children
 }: TooltipProps) {
   return (
@@ -45,6 +48,7 @@ export default function Tooltip({
         delay={delay}
         disabled={disabled}
         className={className}
+        style={style}
       />
     </div>
   )
