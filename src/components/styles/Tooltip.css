@@ -22,8 +22,8 @@
   opacity: 0;
   transition: opacity 0.15s ease;
 
-  --_bg: white;
-  --_color: black;
+  --_bg: #181818;
+  --_color: white;
 
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial;
